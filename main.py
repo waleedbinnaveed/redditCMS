@@ -3,11 +3,11 @@ import datetime as dt
 import re
 
 
-reddit = praw.Reddit(client_id='6U1inT-1s8Q-Bg', \
-                     client_secret='FPyodTG_nj_fJy8WoQ7KNOsL0gKBcw', \
-                     user_agent='MyCryptoMoonShots', \
-                     username='blunt_dagger', \
-                     password='WaleedNaveed@reddit')
+reddit = praw.Reddit(client_id='CLIENT_ID',
+                     client_secret='CLIENT_SECRET',
+                     user_agent='NAME_OF_APPLICATION',
+                     username='REDDIT_USERNAME',
+                     password='REDDIT_PASSWORD')
 
 
 subreddit = reddit.subreddit('CryptoMoonShots')
@@ -44,4 +44,3 @@ for x in top_subreddit:
 
 
 print(cryptoDict)
-
